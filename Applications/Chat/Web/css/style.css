@@ -10,7 +10,8 @@ body
 
 #dialog
 {
-	min-height:600px;
+	height:600px;
+    overflow:scroll;
 	background:#EEEEEE;
 }
 
@@ -26,17 +27,39 @@ body
 	background:#EEEEEE;
 }
 
+
 #userlist > li
 {
 	color:#1372A2;
 	list-style:none;
-	margin-left:12px;
+	margin-left:6px;
 }
 
 #userlist > h4
 {
     text-align:center;
-	font-size:14px;
+	font-size:6px;
+	font-weight:nold;
+}
+
+#map
+{
+	min-height:600px;
+	background:#EEEEEE;
+}
+
+
+#map > li
+{
+	color:#1372A2;
+	list-style:none;
+	margin-left:6px;
+}
+
+#map > h4
+{
+    text-align:center;
+	font-size:6px;
 	font-weight:nold;
 }
 
