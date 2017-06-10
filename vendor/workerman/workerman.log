@@ -1,0 +1,311 @@
+2017-06-06 20:28:19 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:0.0.0.0' in C:\Users\Administrator\Desktop\workerman-chat-for-win\Applications\Chat\Events.php:90
+Stack trace:
+#0 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"say","...')
+#1 C:\Users\Administrator\Desktop\workerman-chat-for-win\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(369): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"say","...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 C:\Users\Administrator\Desktop\workerman-chat-for-win\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #28)
+#5 C:\Users\Administrator\Desktop\workerman-chat-for-win\vendor\workerman\workerman-for-win\Events\Select.php(257): call_user_func_array(Array, Array)
+#6 C:\Users\Administrator\Desktop\workerman-chat-for-win\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#7 C:\Users\Administrator\Desktop\workerman-chat-for-win\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#8 C:\Users\Administrator\Desktop\workerman-chat-for-win\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#9 C:\Users\Administrator\Desktop\workerman-chat-for-win\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#10 C:\Users\Administrator\Desktop\workerman-chat-for-win\Applications\Chat\start_businessworker.php(33): Workerman\Worker::runAll()
+#11 {main}
+2017-06-07 00:19:23 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:24 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:25 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:26 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:27 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:27 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:28 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:29 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:30 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:31 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:32 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:33 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:34 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:35 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:36 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:37 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 00:19:38 Gateway: Worker->name conflict. Key:0.0.0.0:ChatBusinessWorker:0
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 22:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:50 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:50 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:51 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:51 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:55 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:55 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:59 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:27:59 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:28:00 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:28:00 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:28:01 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:28:01 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:24 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:24 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:25 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:25 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:26 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:26 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:31 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:31 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:36 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:37 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:41 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:41 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:46 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:31:46 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:46 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:46 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:46 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:46 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:52 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:52 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:54 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:54 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:58 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:59 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:32:59 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:01 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:01 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:03 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:03 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:06 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:06 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:07 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:07 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:14 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:14 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:17 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:17 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:20 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:20 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:24 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:24 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:27 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:27 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:30 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:30 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:35 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:35 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:39 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:39 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:42 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:42 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:48 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:48 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:51 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:51 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:56 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:33:56 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:00 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:00 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:03 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:03 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:07 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:07 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:12 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:12 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:16 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:16 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:20 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:20 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:22 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:22 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:27 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:27 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:52 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-09 19:34:52 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
