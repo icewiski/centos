@@ -192,7 +192,7 @@
   function say(from_client_id, from_client_name, content, time,gold){
                
                $.toptip(''+from_client_name+':'+content+'', 1000, 'success'); 
-               $("#dialog").css("font-size","0.65em");
+               $("#dialog").css("font-size","0.4em");
                $("#dialog").append(''+from_client_name+' <br> '+time+'<div ><p  >'+content+'</p></div>');
                $('#dialog').animate({scrollTop:9999999+'px'},10)
             
@@ -212,12 +212,16 @@
 //聊天框 攻击
   function saya(from_client_id, from_client_name,time, x,y){
             	$.toptip(' '+time+' <div ><p  > 有人攻击了<br> '+" x "+x+' '+" y "+y+'</p></div> ');
-              
+               $("#dialog").css("font-size","0.4em");
+               $("#dialog").append(' '+time+' <div ><p  > 有人攻击了<br> '+" x "+x+' '+" y "+y+'</p></div> ');
+               $('#dialog').animate({scrollTop:9999999+'px'},10)
          }
       
    function sayd(from_client_id, from_client_name,time, x,y){
             	$.toptip(' '+time+' <div ><p > 有人探测到了你<br> '+" x "+x+' '+" y "+y+'</p></div> ');
-             
+              $("#dialog").css("font-size","0.4em");
+               $("#dialog").append(' '+time+' <div ><p > 有人探测到了你<br> '+" x "+x+' '+" y "+y+'</p></div> ');
+               $('#dialog').animate({scrollTop:9999999+'px'},10)
          }
 
 //攻击
@@ -303,13 +307,13 @@ $(function(){
 
     <div class="weui-tab">
       <div class="weui-tab__bd">
-        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active" >
           <h1>
-              <canvas id="myCanvas" width="350" height="350" 
+              <canvas id="myCanvas" width="350" height="350"  globalAlpha=0.2;
                 style="border:1px solid #000000;"> 
                 </canvas>
                   <button class="weui-btn weui-btn_mini weui-btn_primary" id="left" type="button" onclick="moveto()"  >移动</button>
-                
+               
                  <button class="weui-btn weui-btn_mini weui-btn_primary" id="right" type="button" onclick="detectlength--;drawaim() "  >-</button>
                  <button class="weui-btn weui-btn_mini weui-btn_primary" id="right" type="button" onclick="detectlength++;drawaim() ;"  >+</button>
                   <button class="weui-btn weui-btn_mini weui-btn_primary" id="down" type="button" onclick="detect1()"  >探测</button>
@@ -317,27 +321,78 @@ $(function(){
                 </h1></h1>
         </div>
         <div id="tab4" class="weui-tab__bd-item">
-          <h1><canvas id="textCanvas" width="300" height="160" margin-bottom:"100px"
+          <h1><canvas id="textCanvas" width="300" height="160" margin-bottom:"100px" hidden
                 style="border:1px solid #000000;">
                 </canvas>
-                <canvas id="textCanvas1" width="300" height="300" margin-bottom:"100px"
+                <canvas id="textCanvas1" width="300" height="300" margin-bottom:"100px" hidden
                 style="border:1px solid #000000;">
-                </canvas></h1>
+                </canvas>
+               <article class="weui-article">
+            <h1></h1>
+            <section>
+                <h2 class="title">黑暗宇宙</h2>
+                <section>
+                    <h3>1.1 游戏背景</h3>
+                    <p>
+                        这是一个模拟黑暗宇宙的在线小游戏。所有参与者只能看到自己在宇宙中的位置，然后通过探测来寻找别人的位置。
+                在探测到敌人的位置以后，通过攻击，来消灭敌人。
+                      
+                    </p>
+                    
+                    <p>
+                        <img src="http://www.duotegame.com/picfile/News/2015/04/06/73876839358896258722.png" alt="">
+                       
+                    </p>
+                </section>
+                <section>
+                    <h3>1.2 游戏界面</h3>
+                    <p>
+                        第一个选项卡为星图，在星图中可以看到自己的位置（黑点），探测范围和方向（扇形区域），以及自己的目标位置（+）。在星图上点击可以改变目标位置。
+                        确定目标位置以后，可以移动到该位置，或者探测该方向，或者向该目标位置发动攻击。
+                        如果探测区（扇形区域）存在敌人，则会返回敌人可能存在的球形区域，并通过宇宙广播向所有玩家广播敌人坐标。
+                        此时点击该区域攻击，如果敌人被击中，则被清除。
+                        而通过移动，可以改变自己的坐标位置，不断移动，防止被其他人探测到并消灭。
+                       </p>
+                     <p>   星图上的+ —号可以调节探测范围。移动、探测、攻击按钮，分别会对目标点（+）位置移动、探测、攻击。
+                        <img src="http://www.duotegame.com/picfile/News/2015/04/06/98150543979516279089.png" alt="">
+                        </p>
+                     <p>
+                       
+                        操作面板上的各种属性可以升级，升级探测范围，升级移动速度，升级攻击范围等。（开发中）
+                        资源会每秒生产，每1000资源会升一级。每升一级可以多出一个操作仓。
+                        每个操作仓每秒钟会生产各种设备。
+                        通过调节操作仓的数量，来调节生产各种设备的速度。
+                    </p>
+                     <p> 
+                         第三个选项卡为宇宙广播。通过宇宙广播可以看到当前游戏中的所有玩家，并可以在公共频道聊天，或者私聊。
+                         <img src="http://www.duotegame.com/picfile/News/2015/04/06/77953255129867900957.png" alt="">
+                    </p>
+                   
+                     
+                </section>
+                
+            </section>
+        
+                
+                 </article></h1>
         </div>
         <div id="tab3" class="weui-tab__bd-item">
           <h1>
-              <div class="caption" id="dialog"></div>
-	          
-	           <form onsubmit="onSubmit(); return false;">
-	                <select style="margin-bottom:8px" id="client_list">
+            <div class="weui-navbar">
+  <div class="weui-navbar__item weui_bar__item_on">
+    <form onsubmit="onSubmit(); return false;">
+	              <div class="say-btn">  <select style="margin-bottom:12px" id="client_list">
                         <option value="all">所有人</option>
                     </select>
                     <textarea class="textarea thumbnail" id="textarea"></textarea>
-                    <div class="say-btn"><input type="submit" class="btn btn-default" value="发表" id="saybutton" />
-                    <p>按ctr+回车快速回复</p> <p>可选择对象私聊</p> <p>每次发送信息耗费100金币</p> <p></p> <p></p>
-                    </div>
+                    <input type="submit" class="weui-btn weui-btn_mini weui-btn_primary" value="发表" id="saybutton" /></div>
+               </form>
+  </div>
 
-               </form></h1>
+</div>
+              <div class="caption" id="dialog"></div>
+	          
+	          </h1>
         </div>
         <div id="tab2" class="weui-tab__bd-item">
           <h1>
@@ -423,7 +478,7 @@ $(function(){
           <div class="weui-tabbar__icon">
             
           </div>
-          <p class="weui-tabbar__label">飞船信息</p>
+          <p class="weui-tabbar__label">游戏信息</p>
         </a>
       </div>
     </div>
