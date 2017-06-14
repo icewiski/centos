@@ -24,13 +24,15 @@ function updateinfo(){
      $("#yzuobiao").text("y坐标："+player.y);
      $("#wood").text("木材："+wood);
      $("#gold").text("黄金："+gold);
-     $("#population").text("人口："+level);
-     $("#level").text("等级："+level);
+     $("#population").text("升级剩余："+lefthp);
+     $("#level").text("等级（人口）："+level);
      $("#playername").text("玩家名字："+name);
     $("#minernum").text("矿工："+miner);
     $("#jackernum").text("伐木工："+jacker);
+    miaoshang=2+dplus;
+    dianji=10+eplus;
     $("#miaoshang").text("秒伤："+miaoshang);
-    $("#dianji").text("点击伤害："+dianji);
+    $("#dianji").text("点击："+dianji);
     hppercent=(1000-lefthp)/10;
     var hpppp=hppercent+"%";
     $("#percentbar").attr("style","width:"+hpppp);

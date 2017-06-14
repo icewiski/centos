@@ -39,14 +39,16 @@ function d(){
     
        l=l+1;
         level=level+1; 
-      
+      lefthp=1000;
    
         drawlevel();
+        updateinfo();
           }
        else{lefthp= lefthp-10-dplus;
           
            if(lefthp<=0){lefthp=0}
            drawlevel();
+           updateinfo();
     }
  
      }
@@ -60,10 +62,12 @@ function e(){
      
        lefthp=1000;
         drawlevel();
+        updateinfo();
           }
        else{lefthp= lefthp-2-eplus;
            if(lefthp<=0){lefthp=0}
            drawlevel();
+           updateinfo();
     }
  
      }

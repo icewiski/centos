@@ -308,15 +308,15 @@ $(function(){
               <canvas id="myCanvas" width="350" height="350" 
                 style="border:1px solid #000000;"> 
                 </canvas>
-                  <button class="weui-btn weui-btn_mini" id="left" type="button" onclick="moveto()"  >移动</button>
+                  <button class="weui-btn weui-btn_mini weui-btn_primary" id="left" type="button" onclick="moveto()"  >移动</button>
                 
-                 <button class="weui-btn weui-btn_mini" id="right" type="button" onclick="detectlength--;drawaim() "  >-</button>
-                 <button class="weui-btn weui-btn_mini" id="right" type="button" onclick="detectlength++;drawaim() ;"  >+</button>
-                  <button class="weui-btn weui-btn_mini" id="down" type="button" onclick="detect1()"  >探测</button>
-                 <button class="weui-btn weui-btn_mini" id="right" type="button" onclick="attack1()"  >攻击</button>
+                 <button class="weui-btn weui-btn_mini weui-btn_primary" id="right" type="button" onclick="detectlength--;drawaim() "  >-</button>
+                 <button class="weui-btn weui-btn_mini weui-btn_primary" id="right" type="button" onclick="detectlength++;drawaim() ;"  >+</button>
+                  <button class="weui-btn weui-btn_mini weui-btn_primary" id="down" type="button" onclick="detect1()"  >探测</button>
+                 <button class="weui-btn weui-btn_mini weui-btn_primary" id="right" type="button" onclick="attack1()"  >攻击</button>
                 </h1></h1>
         </div>
-        <div id="tab2" class="weui-tab__bd-item">
+        <div id="tab4" class="weui-tab__bd-item">
           <h1><canvas id="textCanvas" width="300" height="160" margin-bottom:"100px"
                 style="border:1px solid #000000;">
                 </canvas>
@@ -339,7 +339,7 @@ $(function(){
 
                </form></h1>
         </div>
-        <div id="tab4" class="weui-tab__bd-item">
+        <div id="tab2" class="weui-tab__bd-item">
           <h1>
           <div class="weui-flex">   
             <div class="weui-flex__item"><div class="placeholder" id="playername"></div></div>
@@ -347,33 +347,36 @@ $(function(){
 
            <div class="weui-flex">   
             <div class="weui-flex__item"><div class="placeholder" id="xzuobiao">x</div></div>
-            <div class="weui-flex__item"><div class="placeholder" id="yzuobiao">y</div></div>
+            <div class="weui-flex__item"><div class="placeholder" id="wood">木材</div></div>
             </div>
 
            <div class="weui-flex">
-            <div class="weui-flex__item"><div class="placeholder" id="wood">木材</div></div>
+            
+            <div class="weui-flex__item"><div class="placeholder" id="yzuobiao">y</div></div>
             <div class="weui-flex__item"><div class="placeholder" id="gold">黄金</div></div>
             </div>
 
-            <div class="weui-flex">
-            <div class="weui-flex__item"><div class="placeholder" id="population">人口</div></div>
-            <div class="weui-flex__item"><div class="placeholder" id="level">等级</div></div>
-            </div>
+            
 
               <div class="weui-flex">
-            <div><button class="weui-btn weui-btn_mini" id="minerup" class="ce" type="button" onclick="minerup()" >增加矿工</button></div>
+            <div><button class="weui-btn weui-btn_mini weui-btn_primary"  href="javascript:;" id="minerup" class="ce" type="button" onclick="minerup()" >增加矿工</button></div>
             <div class="weui-flex__item"><div class="placeholder" id="minernum" >矿工</div></div>
-            <div><button class="weui-btn weui-btn_mini" id="minerdown" class="ce"  type="button" onclick="minerdown()" >减少矿工</button></div>
+            <div><button class="weui-btn weui-btn_mini weui-btn_primary"  href="javascript:;" id="minerdown" class="ce"  type="button" onclick="minerdown()" >减少矿工</button></div>
             </div>
             <div class="weui-flex">
-            <div><button class="weui-btn weui-btn_mini" id="jackerup" class="ce"  type="button" onclick="jackerup()" >增加伐木工</button></div>
+            <div><button class="weui-btn weui-btn_mini weui-btn_primary" id="jackerup" class="ce"  type="button" onclick="jackerup()" >增加伐木工</button></div>
             <div class="weui-flex__item"><div class="placeholder" id="jackernum">weui</div></div>
-            <div><button class="weui-btn weui-btn_mini" id="jackerdown" class="ce"  type="button" onclick="jackerdown()" >减少伐木工</button></div>
+            <div><button class="weui-btn weui-btn_mini weui-btn_primary" id="jackerdown" class="ce"  type="button" onclick="jackerdown()" >减少伐木工</button></div>
             </div>
             <div class="weui-flex">
-            <div><button class="weui-btn weui-btn_mini" id="dplus" class="ce"  type="button" onclick="dpluss()" >增加秒伤</button></div>
-            <div class="weui-flex__item"><div class="placeholder" id="miaoshang">秒伤</div></div><div class="weui-flex__item"><div class="placeholder" id="dianji">点击伤害</div></div>
-            <div><button class="weui-btn weui-btn_mini" id="eplus" class="ce"  type="button" onclick="epluss()" >增加点击伤害</button></div>
+            <div class="weui-flex__item"><div class="placeholder" id="level">等级</div></div>
+            <div class="weui-flex__item"><div class="placeholder" id="population">升级剩余</div></div>
+            </div>
+
+            <div class="weui-flex">
+            <div><button class="weui-btn weui-btn_mini weui-btn_primary" id="dplus" class="ce"  type="button" onclick="dpluss()" >增加秒伤</button></div>
+            <div class="weui-flex__item"><div class="placeholder" id="miaoshang">秒伤</div></div><div class="weui-flex__item"><div class="placeholder" id="dianji">点击</div></div>
+            <div><button class="weui-btn weui-btn_mini weui-btn_primary" id="eplus" class="ce"  type="button" onclick="epluss()" >增加点击</button></div>
             </div>
             <div class="weui-progress">
              <div class="weui-flex">   
@@ -384,13 +387,13 @@ $(function(){
              <div class="weui-flex"> <div class="placeholder" >  </div>  
            </div>
             </div>
-            <div class="weui-flex">
-            <div><div class="placeholder">weui</div></div>
-            <div class="weui-flex__item"><button class="weui-btn weui-btn_mini" id="save" type="button" onclick="e()" >点击生产资源</button></div>
-            <div><div class="placeholder">weui</div></div>
-            </div>
-
-                <button class="weui-btn weui-btn_mini" id="save" type="button" onclick="e()" >点击生产资源</button>
+            <div class="weui-flex" align="center"></div>
+            <div class="placeholder" align="center">点击升级</div>
+            <div class="weui-flex" align="center"></div>
+            
+            
+            <div class="weui-flex__item"> <button class="weui-btn weui-btn_mini weui-btn_primary" id="save" type="button" onclick="e()" >点击生产资源</button><button class="weui-btn weui-btn_mini weui-btn_primary" id="save" type="button" onclick="e()" >点击生产资源</button></div>
+           
               
         </div>
       </div>
@@ -407,7 +410,7 @@ $(function(){
           <div class="weui-tabbar__icon">
          
           </div>
-          <p class="weui-tabbar__label">飞船信息</p>
+          <p class="weui-tabbar__label">控制面板</p>
         </a>
         <a href="#tab3" class="weui-tabbar__item">
          
@@ -420,7 +423,7 @@ $(function(){
           <div class="weui-tabbar__icon">
             
           </div>
-          <p class="weui-tabbar__label">操作面板</p>
+          <p class="weui-tabbar__label">飞船信息</p>
         </a>
       </div>
     </div>
