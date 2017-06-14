@@ -64,7 +64,7 @@ a:hover {
 
 h1 {
   margin: 0.67em 0;
-  font-size: 2em;
+  font-size: 0.8em;
 }
 
 abbr[title] {
@@ -5252,6 +5252,7 @@ a.thumbnail.active {
 }
 
 .thumbnail .caption {
+  font-size: 0.8em;
   padding: 9px;
   color: #333333;
 }

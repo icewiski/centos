@@ -10,20 +10,22 @@ body
 
 #dialog
 {
-	height:600px;
+	height:200px;
     overflow:scroll;
+    font-size:4px;
 	background:#EEEEEE;
 }
 
 .textarea
 {
     height:6em;
+    font-size:4px;
 	width:100%;
 }
 
 #userlist
 {
-	min-height:600px;
+	min-height:200px;
 	background:#EEEEEE;
 }
 
@@ -38,7 +40,7 @@ body
 #userlist > h4
 {
     text-align:center;
-	font-size:6px;
+	font-size:4px;
 	font-weight:nold;
 }
 
@@ -65,7 +67,7 @@ body
 
 .words
 {
-	margin:8px;
+	margin:4px;
 }
 
 

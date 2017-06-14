@@ -1,17 +1,17 @@
        var l=3;  //当前使用数组顺序
-       var level=1;
+     
        var  lefthp=ssc[l];
 var dplus = 10;
 var eplus = 10;
-
+ var miaoshang=sx[l]+dplus;
+    var dianji=ssz[l]+eplus;
+    
 var myVar3=setInterval(function(){d()},1000);
 function drawlevel(){
      var c=document.getElementById("textCanvas1");
     var ctx=c.getContext("2d");
     c.height=c.height
-    var miaoshang=sx[l]+dplus;
-    var dianji=ssz[l]+eplus;
-    
+   
     ctx.font="20px Arial";
     ctx.fillText("殖民地:",10,40);
     ctx.fillText(level,150,40);

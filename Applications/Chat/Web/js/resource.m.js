@@ -17,24 +17,7 @@ function collectgold(){
     save();
     drawtext();
     startdraw()
-    updateinfo()
        }
-function updateinfo(){
-     $("#xzuobiao").text("x坐标："+player.x);
-     $("#yzuobiao").text("y坐标："+player.y);
-     $("#wood").text("木材："+wood);
-     $("#gold").text("黄金："+gold);
-     $("#population").text("人口："+level);
-     $("#level").text("等级："+level);
-     $("#playername").text("玩家名字："+name);
-    $("#minernum").text("矿工："+miner);
-    $("#jackernum").text("伐木工："+jacker);
-    $("#miaoshang").text("秒伤："+miaoshang);
-    $("#dianji").text("点击伤害："+dianji);
-    hppercent=(1000-lefthp)/10;
-    var hpppp=hppercent+"%";
-    $("#percentbar").attr("style","width:"+hpppp);
-}
 function drawtext(){
      var c=document.getElementById("textCanvas");
     var ctx=c.getContext("2d");
@@ -60,8 +43,6 @@ function minerup(){
      else{ miner=miner+1;
      save() ;
       drawtext();
-   
-       $("#minernum").text("矿工："+miner);
     }
     }
 function minerdown(){   
@@ -69,9 +50,6 @@ function minerdown(){
       else{ miner=miner-1;
          save();
           drawtext();
-       
-         
-       $("#minernum").text("矿工："+miner);
           }
        }
 function jackerup(){
@@ -79,9 +57,6 @@ function jackerup(){
    else{ jacker=jacker+1;
         save();
         drawtext();
-       
-         
-       $("#jackernum").text("伐木工："+jacker);
         }
     }
 function jackerdown(){
@@ -89,6 +64,4 @@ function jackerdown(){
    else{ jacker=jacker-1;
         drawtext();
         save();}
-        
-       $("#jackernum").text("伐木工："+jacker);
     }

@@ -6,18 +6,63 @@ function startdraw(){
   ctx.beginPath();
   ctx.arc(player.x,player.y,1,0,2*Math.PI);
   ctx.stroke();
+  drawaim();
+  drawtarget(target.x,target.y);
   }
 
-function attack(x,y){
+function attack(x,y,fromx,fromy){
+   if ( x==fromx && y==fromy){
    
-    gold=gold-100;
+  //点击取消后的回调函数
+ 
+
+  $.confirm({
+  title: '自毁？',
+  text: '攻击坐标点与自身坐标相同，已偏移攻击目标？',
+  onOK:    target.x=target.x+10,
+  onCancel: player.x=player.x+10,
+});
+ 
+    
+  }
     var c=document.getElementById("myCanvas");
     var ctx=c.getContext("2d");
     c.height=c.height
     ctx.fillStyle="#DC143C";
     ctx.beginPath();
     ctx.arc(x,y,5,0,2*Math.PI);
+    ctx.closePath();
+    ctx.moveTo(player.x,player.y)
     ctx.arc(player.x,player.y,1,0,2*Math.PI);
+    ctx.fill();
+    ctx.fillStyle="red";
+    ctx.moveTo(x,y);
+    ctx.lineTo(fromx,fromy);
+    ctx.stroke()
+	  setTimeout(function refrash(){
+   
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    c.height=c.height
+    ctx.beginPath();
+    ctx.arc(player.x,player.y,1,0,2*Math.PI);
+    ctx.stroke()}   ,2000);
+        
+    }
+function attackblack(x,y){
+     
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    c.height=c.height
+    ctx.fillStyle="black";
+    ctx.beginPath();
+    ctx.arc(x,y,5,0,2*Math.PI);
+    ctx.closePath();
+    ctx.moveTo(player.x,player.y)
+    ctx.arc(player.x,player.y,1,0,2*Math.PI);
+    ctx.fill();
+    
+
     ctx.stroke()
 	  setTimeout(function refrash(){
    
@@ -55,6 +100,7 @@ function right(){
   c.height=c.height
   ctx.beginPath();
   ctx.arc(player.x,player.y,1,0,2*Math.PI);
+ // console.log(player.x,player.y);
     ctx.stroke();
   drawtext();}
   }
@@ -69,7 +115,7 @@ function up(){
   c.height=c.height
   ctx.beginPath();
   ctx.arc(player.x,player.y,1,0,2*Math.PI);
-   console.log(player.x,player.y);
+ //  console.log(player.x,player.y);
     ctx.stroke();
   drawtext();}
   }
@@ -85,6 +131,7 @@ function down(){
   ctx.beginPath();
   ctx.arc(player.x,player.y,1,0,2*Math.PI);
     ctx.stroke();
+ //   console.log(player.x,player.y);
   drawtext();}
   }
 
@@ -94,7 +141,8 @@ function vs(x,y){
   var yc=player.y-y;
   var zc=Math.sqrt(xc*xc+yc*yc);
   if (zc<5)
-          { console.log(xc,yc);
+          {
+   //          console.log(xc,yc);
         
            ondead();
           deletecookie();
