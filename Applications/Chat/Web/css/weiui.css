@@ -1656,14 +1656,14 @@ a.weui-media-box:active {
   padding: 0 .34em;
   font-size: 12px;
 }
-.weui-flex {font-size:0.8em;
+.weui-flex {font-size:0.65em;
 text-align:center;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
 }
 .weui-flex__item {
-  font-size:0.8em;
+  font-size:0.65em;
   text-align:center;
   -webkit-box-flex: 1;
   -webkit-flex: 1;

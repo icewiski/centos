@@ -4,8 +4,8 @@ var t=1;
 var t2=1;
 var pp=0
 var pu=1;
-var c =Math.round( 50*(Math.random())+100 )  ;
-var d =Math.round( 50*(Math.random())+100 )  ;
+var c =Math.round( 250*(Math.random())+30 )  ;
+var d =Math.round( 250*(Math.random())+30 )  ;
 var player={
     x:c,
     y:d,

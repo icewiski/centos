@@ -22,3 +22,29 @@ function moveto(){
 }
 
 
+function detectleveladd(){
+  if(gold<=1000){alert("黄金不足")}
+       else{
+         gold=gold-1000;
+             detectlevel=detectlevel+10;
+         updateinfo();
+                   }
+}
+
+function movespeedadd(){
+  if(wood<=1000){alert("黄金不足")}
+       else{  
+         wood=wood-1000;
+           movespeed=movespeed*0.9;
+         updateinfo();
+                   }
+}
+
+function attackradd(){
+  if(gold<=1000){alert("黄金不足")}
+       else{ 
+         gold=gold-1000;
+            attackr=attackr+1;
+         updateinfo();
+                   }
+}

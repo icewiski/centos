@@ -32,7 +32,7 @@ function save(){
      dplus=0;
      eplus=0;
      lefthp=100;
-    $.cookie('gold',null ) ;
+ //   $.cookie('gold',null ) ;
 //	 $.cookie('wood',null ) ;
 //     $.cookie('miner',null ) ;
 //	 $.cookie('jacker',null ) ;

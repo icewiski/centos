@@ -11,13 +11,13 @@ function startdraw(){
   drawtarget(target.x,target.y);
   }
 
-function attack(x,y,fromx,fromy){
+function attack(x,y,fromx,fromy,r){
     var c=document.getElementById("myCanvas");
     var ctx=c.getContext("2d");
     c.height=c.height
     ctx.fillStyle="#DC143C";
     ctx.beginPath();
-    ctx.arc(x,y,5,0,2*Math.PI);
+    ctx.arc(x,y,r,0,2*Math.PI);
     ctx.closePath();
     ctx.moveTo(player.x,player.y)
     ctx.arc(player.x,player.y,1,0,2*Math.PI);
@@ -122,12 +122,12 @@ function down(){
   drawtext();}
   }
 
-
+var attackr=5;
 function vs(x,y){
   var xc=player.x-x;
   var yc=player.y-y;
   var zc=Math.sqrt(xc*xc+yc*yc);
-  if (zc<5)
+  if (zc<attackr)
           {
    //          console.log(xc,yc);
         

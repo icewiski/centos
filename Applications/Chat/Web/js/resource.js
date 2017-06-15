@@ -22,38 +22,42 @@ function collectgold(){
 function updateinfo(){
      $("#xzuobiao").text("x坐标："+player.x);
      $("#yzuobiao").text("y坐标："+player.y);
-     $("#wood").text("木材："+wood);
-     $("#gold").text("黄金："+gold);
-     $("#population").text("升级剩余："+lefthp);
-     $("#level").text("等级（人口）："+level);
+     $("#wood").text("能量："+wood+"+"+jacker*2+"/s");
+     $("#gold").text("矿石："+gold+"+"+miner*2+"/s");
+     
+     $("#population").text("建造进度："+lefthp);
+     $("#level").text("船舱数量："+level);
      $("#playername").text("玩家名字："+name);
-    $("#minernum").text("矿工："+miner);
-    $("#jackernum").text("伐木工："+jacker);
-    miaoshang=2+dplus;
-    dianji=10+eplus;
-    $("#miaoshang").text("秒伤："+miaoshang);
-    $("#dianji").text("点击："+dianji);
-    hppercent=(1000-lefthp)/10;
-    var hpppp=hppercent+"%";
-    $("#percentbar").attr("style","width:"+hpppp);
+     $("#minernum").text("采矿器舱："+miner);
+     $("#jackernum").text("反应堆舱："+jacker);    
+     $("#detectlevel").text("探测距离："+detectlength);  
+     $("#movespeed").text("移动速度："+movespeed);  
+     $("#attackr").text("攻击半径："+attackr);  
+     miaoshang=2+dplus;
+     dianji=10+eplus;
+     $("#miaoshang").text("自动建造速度："+miaoshang);
+     $("#dianji").text("手动建造速度："+dianji);
+     hppercent=(1000-lefthp)/10;
+     var hpppp=hppercent+"%";
+     $("#percentbar").attr("style","width:"+hpppp);
 }
 function drawtext(){
      var c=document.getElementById("textCanvas");
     var ctx=c.getContext("2d");
     c.height=c.height
     ctx.font="20px Arial";
-    ctx.fillText("黄金:",150,80);
+    ctx.fillText("能量:",150,80);
     ctx.fillText(gold,210,80);
-    ctx.fillText("矿工:",10,80);
+    ctx.fillText("反应堆:",10,80);
     ctx.fillText(miner,80,80);
 
-    ctx.fillText("木材:",150,40);
+    ctx.fillText("矿石:",150,40);
     ctx.fillText(wood,210,40);
-    ctx.fillText("伐木工:",10,40);
+    ctx.fillText("采矿船:",10,40);
     ctx.fillText(jacker,80,40);
 
 
-    ctx.fillText("人口:",10,120);
+    ctx.fillText("船舱:",10,120);
     ctx.fillText(level,80,120);
     }
 
@@ -94,3 +98,13 @@ function jackerdown(){
         
        $("#jackernum").text("伐木工："+jacker);
     }
+
+function goldadd(){
+    gold=gold+eplus;
+    updateinfo();
+}
+
+function woodadd(){
+    wood=wood+eplus
+    updateinfo();
+}

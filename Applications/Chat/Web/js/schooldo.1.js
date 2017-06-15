@@ -86,7 +86,7 @@ function dpluss(){
 function epluss(){
   if (wood>=100){
    wood=wood-100;
-   eplus=eplus+20;
+   eplus=eplus+1;
     save();
   drawtext();
   drawlevel();
