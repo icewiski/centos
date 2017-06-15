@@ -22,7 +22,7 @@ use \Workerman\Autoloader;
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 // WebServer
-$web = new WebServer("http://0.0.0.0:55151");
+$web = new WebServer("http://0.0.0.0:80");
 // WebServer数量
 $web->count = 2;
 // 设置站点根目录

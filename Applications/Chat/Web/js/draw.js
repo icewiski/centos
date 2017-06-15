@@ -1,5 +1,6 @@
 
 function startdraw(){
+
   var cc=document.getElementById("myCanvas");
   var ctx=cc.getContext("2d");
   cc.height=cc.height
@@ -11,20 +12,6 @@ function startdraw(){
   }
 
 function attack(x,y,fromx,fromy){
-   if ( x==fromx && y==fromy){
-   
-  //点击取消后的回调函数
- 
-
-  $.confirm({
-  title: '自毁？',
-  text: '攻击坐标点与自身坐标相同，已偏移攻击目标？',
-  onOK:    target.x=target.x+10,
-  onCancel: player.x=player.x+10,
-});
- 
-    
-  }
     var c=document.getElementById("myCanvas");
     var ctx=c.getContext("2d");
     c.height=c.height

@@ -61,7 +61,7 @@ class Events
                 // 把房间号昵称放到session中
                 $room_id = $message_data['room_id'];
                 $client_name = htmlspecialchars($message_data['client_name']);
-                $gold = htmlspecialchars($message_data['gold']);
+               
                 $_SESSION['room_id'] = $room_id;
                 $_SESSION['client_name'] = $client_name;
                 
@@ -74,7 +74,7 @@ class Events
                 $clients_list[$client_id] = $client_name;
                 
                 // 转播给当前房间的所有客户端，xx进入聊天室 message {type:login, client_id:xx, name:xx} 
-                $new_message = array('type'=>$message_data['type'], 'client_id'=>$client_id, 'client_name'=>htmlspecialchars($client_name), 'time'=>date('Y-m-d H:i:s'),'gold'=>$message_data['gold']);
+                $new_message = array('type'=>$message_data['type'], 'client_id'=>$client_id, 'client_name'=>htmlspecialchars($client_name), 'time'=>date('Y-m-d H:i:s'));
                 Gateway::sendToGroup($room_id, json_encode($new_message));
                 Gateway::joinGroup($client_id, $room_id);
                
@@ -103,7 +103,7 @@ class Events
                         'to_client_id'=>$message_data['to_client_id'],
                         'content'=>"<b>对你说: </b>".nl2br(htmlspecialchars($message_data['content'])),
                         'time'=>date('Y-m-d H:i:s'),
-                        'gold'=>$message_data['gold'],
+                       
                     );
                     Gateway::sendToClient($message_data['to_client_id'], json_encode($new_message));
                     $new_message['content'] = "<b>你对".htmlspecialchars($message_data['to_client_name'])."说: </b>".nl2br(htmlspecialchars($message_data['content']));
@@ -137,12 +137,56 @@ class Events
                     'time'=>date('Y-m-d H:i:s'),
                     'x'=>$message_data['x'],
                     'y'=>$message_data['y'],
+                    'fromx'=>$message_data['fromx'],
+                    'fromy'=>$message_data['fromy'],
                     );
             return Gateway::sendToGroup($room_id ,json_encode($new_message));
 
+                 case 'detect':
+            if(!isset($_SESSION['room_id']))
+                {
+                    throw new \Exception("\$_SESSION['room_id'] not set. client_ip:{$_SERVER['REMOTE_ADDR']}");
+                }
+                $room_id = $_SESSION['room_id'];
+                $client_name = $_SESSION['client_name'];
+                $new_message = array(
+                    'type'=>'detect', 
+                    'from_client_id'=>$client_id,
+                    'from_client_name' =>$client_name,
+                    'to_client_id'=>'all',
+                    'time'=>date('Y-m-d H:i:s'),
+                    'fromx'=>$message_data['fromx'],
+                    'fromy'=>$message_data['fromy'],
+                    'ad'   =>$message_data['ad'],
+                    'dl'   =>$message_data['dl'],
+                    'da'   =>$message_data['da'],
+                    
+                    );
+            return Gateway::sendToGroup($room_id ,json_encode($new_message));
+
+              case 'report':
+            if(!isset($_SESSION['room_id']))
+                {
+                    throw new \Exception("\$_SESSION['room_id'] not set. client_ip:{$_SERVER['REMOTE_ADDR']}");
+                }
+                $room_id = $_SESSION['room_id'];
+                $client_name = $_SESSION['client_name'];
+                $new_message = array(
+                    'type'=>'report', 
+                    'from_client_id'=>$client_id,
+                    'from_client_name' =>$client_name,
+                    'to_client_id'=>'all',
+                    'time'=>date('Y-m-d H:i:s'),
+                    'ddx'=>$message_data['ddx'],
+                    'ddy'=>$message_data['ddy'],
+                 
+                    
+                    );
+            return Gateway::sendToGroup($room_id ,json_encode($new_message));
         }
    }
    
+
    /**
     * 当客户端断开连接时
     * @param integer $client_id 客户端id
@@ -162,3 +206,5 @@ class Events
    }
   
 }
+
+

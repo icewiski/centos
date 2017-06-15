@@ -47,10 +47,11 @@
    //      console.log(gama);
         if( 
         gama<theta){
+           
             $("#dialog").append('<p>你被探测到了</p>');
             $('#dialog').animate({scrollTop:9999999+'px'},10)
              ws.send('{"type":"report","to_client_id":"all","to_client_name":"all","ddx":"'+player.x+'","ddy":"'+player.y+'","ddlevel":"'+level+'","content":"探测到一颗生命行星，坐标'+player.x+''+player.y+'，等级'+level+'"}');
-        sayd(data['from_client_id'], data['from_client_name'], data['time'],data['x'],data['y'] );    
+           $.alert('<p>你被探测到了</p>'); 
         }
         
    //  console.log(length,hudu,theta,gama,player.x,player.y,ux,uy,px,target.y);

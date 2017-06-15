@@ -10,13 +10,14 @@
   <script type="text/javascript" src="/js/swfobject.js"></script>
   <script type="text/javascript" src="/js/web_socket.js"></script>
   <script type="text/javascript" src="/js/jquery.min.js"></script>
-
+  <script type="text/javascript" src="/js/Water.js"></script>
 
   <script type="text/javascript" src="js/draw.js"></script>
   <script type="text/javascript" src="js/cookie.js"></script>
   <script type="text/javascript" src="js/Cookies.js"></script>
   <script type="text/javascript" src="js/moveto.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
  
   <script type="text/javascript" src="js/school.js"></script>
   <script type="text/javascript" src="js/schooldo.1.js"></script>
@@ -491,7 +492,8 @@ $(function(){
 <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
 </body>
 <script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F7b1919221e89d2aa5711e4deb935debd' type='text/javascript'%3E%3C/script%3E"));</script>
-<script type="text/javascript">   startdraw() ; mousep(); </script>
+<script type="text/javascript">   startdraw() ; mousep();
+	</script>
 
 </body>
 </html>
