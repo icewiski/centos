@@ -40,3 +40,5 @@ function range(){
        pu=pu+1}
     document.getElementById("demo9").innerHTML=player.range; 
     }
+
+

@@ -35,7 +35,7 @@ function movespeedadd(){
   if(wood<=1000){alert("黄金不足")}
        else{  
          wood=wood-1000;
-           movespeed=movespeed*0.9;
+           movespeed=Math.round(movespeed*0.9);
          updateinfo();
                    }
 }

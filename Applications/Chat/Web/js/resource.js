@@ -30,7 +30,7 @@ function updateinfo(){
      $("#playername").text("玩家名字："+name);
      $("#minernum").text("采矿器舱："+miner);
      $("#jackernum").text("反应堆舱："+jacker);    
-     $("#detectlevel").text("探测距离："+detectlength);  
+     $("#detectlevel").text("探测距离："+detectlevel);  
      $("#movespeed").text("移动速度："+movespeed);  
      $("#attackr").text("攻击半径："+attackr);  
      miaoshang=2+dplus;
