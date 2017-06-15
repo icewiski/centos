@@ -2,6 +2,7 @@
      function detect1(){
             if(gold<=100){alert("黄金不足")}
        else{    
+           gold=gold-100;
                 drawdetect();
                	ws.send('{"type":"detect","to_client_id":"all","to_client_name":"all","fromx":"'+player.x+'","fromy":"'+player.y+'","ad":"'+aimdirection+'","dl":"'+detectlength+'","da":"'+detectangle+'"}');
              }
@@ -58,35 +59,6 @@
     }    }    
 
 
- function detect4(){
-    var ux ,uy, theta;
-    var dx=target.x -player.x;
-    var dy=player.y -target.y;
-    var hudu = (2*Math.PI/360)*aimdirection;
-    theta = (2*Math.PI/360)*detectangle;
-    ux=Math.sin(hudu)*detectlength;
-    uy=Math.cos(hudu)*detectlength;
-    var length =Math.sqrt(dx*dx+dy*dy);
-     if (length > detectlength){
-         console.log(length,theta,dx,hudu)
-          drawdetect();
-               }
-    else{
-        var dianji=(dx*ux+dy*uy)
-        var moji= Math.sqrt(Math.abs(dx*dx+dy*dy))*Math.sqrt(Math.abs(ux*ux+uy*uy))
-   //      console.log(dx,dy,ux,uy,dianji,moji);
-        var gama=Math.acos(dianji/moji);
-   //      console.log(gama);
-        if( 
-        gama<theta){
-             drawdetect();
-            alert("中了");
-            }
-        else{
-       //      drawdetect();
-            
-   //  console.log(length,hudu,theta,gama,player.x,player.y,ux,uy,px,target.y);
-    }    }    }
 
 function drawdetect(e){
     detectangle  = 360*detecteara/(detectlength*detectlength*Math.PI);

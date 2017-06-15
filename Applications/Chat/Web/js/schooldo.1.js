@@ -95,8 +95,8 @@ function epluss(){
   }
 
 var target={
-  x:player.x,
-  y:player.y,
+  x:player.x+20,
+  y:player.y+20,
   }
 
 function  xplus(e){
